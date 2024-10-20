@@ -30,7 +30,7 @@ if selected_genre != 'All':
     filtered_games = games_df[games_df['Genre'] == selected_genre]
 else:
     filtered_games = games_df
-selected_game = ph.selectbox(
+selected_game = ph.selectbox()
     'Select a game from the filtered list: (you can type it as well)',
     [''] + filtered_games['Title'].to_list(),
     key='default',
